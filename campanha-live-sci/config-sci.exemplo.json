@@ -1,0 +1,150 @@
+{
+  "conta": "act_SEU_ID_DA_CONTA",
+  "pagina_id": "ID_DA_PAGINA",
+  "instagram_id": "ID_DO_INSTAGRAM",
+  "pixel_id": "ID_DO_PIXEL",
+  "evento": "COMPLETE_REGISTRATION",
+  "idade_min": 25,
+  "idade_max": 55,
+  "atribuicao": [
+    {
+      "event_type": "CLICK_THROUGH",
+      "window_days": 7
+    },
+    {
+      "event_type": "VIEW_THROUGH",
+      "window_days": 1
+    },
+    {
+      "event_type": "ENGAGED_VIDEO_VIEW",
+      "window_days": 1
+    }
+  ],
+  "plataformas": [
+    "facebook",
+    "instagram",
+    "messenger"
+  ],
+  "botao": "LEARN_MORE",
+  "url_tags": "utm_source=meta&utm_medium=cpc&utm_campaign={{campaign.name}}&utm_id={UTM_ID}&utm_term={{adset.name}}&utm_content={{ad.name}}",
+  "publicos": {
+    "lista_clientes": "ID_DO_PUBLICO",
+    "lista_nao_clientes": "ID_DO_PUBLICO",
+    "eng_ig_30d": "ID_DO_PUBLICO",
+    "eng_fb_30d": "ID_DO_PUBLICO",
+    "eng_ig_365d": "ID_DO_PUBLICO",
+    "eng_fb_365d": "ID_DO_PUBLICO",
+    "lal2_eng_fb_30d": "ID_DO_PUBLICO",
+    "lal2_eng_ig_30d": "ID_DO_PUBLICO"
+  },
+  "conjuntos": [
+    {
+      "nome": "00_AUTO_LISTA_EMAIL",
+      "incluir": [
+        "lista_clientes",
+        "lista_nao_clientes"
+      ],
+      "excluir": []
+    },
+    {
+      "nome": "02_AUTO_ENVOLVIMENTO_30D",
+      "incluir": [
+        "eng_ig_30d",
+        "eng_fb_30d"
+      ],
+      "excluir": [
+        "lista_clientes",
+        "lista_nao_clientes"
+      ]
+    },
+    {
+      "nome": "03_AUTO_ENVOLVIMENTO_365D",
+      "incluir": [
+        "eng_ig_365d",
+        "eng_fb_365d"
+      ],
+      "excluir": [
+        "eng_ig_30d",
+        "eng_fb_30d",
+        "lista_clientes",
+        "lista_nao_clientes"
+      ]
+    },
+    {
+      "nome": "03_AUTO_LOOKALIKE_2_ENVOLVIMENTO_30D",
+      "incluir": [
+        "lal2_eng_fb_30d",
+        "lal2_eng_ig_30d"
+      ],
+      "excluir": [
+        "eng_ig_30d",
+        "eng_fb_30d",
+        "eng_ig_365d",
+        "eng_fb_365d",
+        "lista_clientes",
+        "lista_nao_clientes"
+      ]
+    }
+  ],
+  "recursos_desligados": [
+    "adapt_to_placement",
+    "add_text_overlay",
+    "ads_with_benefits",
+    "advantage_plus_creative",
+    "app_highlights",
+    "audio",
+    "biz_ai",
+    "carousel_to_video",
+    "catalog_feed_tag",
+    "creative_stickers",
+    "cv_transformation",
+    "description_automation",
+    "dha_optimization",
+    "dynamic_partner_content",
+    "enable_ncs_testimonials",
+    "enhance_cta",
+    "feed_caption_optimization",
+    "generate_cta",
+    "hide_price",
+    "ig_glados_feed",
+    "ig_video_native_subtitle",
+    "image_animation",
+    "image_auto_crop",
+    "image_background_gen",
+    "image_brightness_and_contrast",
+    "image_enhancement",
+    "image_templates",
+    "image_text_translation",
+    "image_touchups",
+    "image_uncrop",
+    "inline_comment",
+    "local_store_extension",
+    "media_liquidity_animated_image",
+    "media_order",
+    "media_type_automation",
+    "multi_photo_to_video",
+    "pac_recomposition",
+    "pac_relaxation",
+    "product_browsing",
+    "product_extensions",
+    "product_metadata_automation",
+    "profile_card",
+    "replace_media_text",
+    "reveal_details_over_time",
+    "show_destination_blurbs",
+    "show_summary",
+    "site_extensions",
+    "standard_enhancements_catalog",
+    "text_optimizations",
+    "text_translation",
+    "translate_voiceover",
+    "video_auto_crop",
+    "video_filtering",
+    "video_highlight",
+    "video_highlights",
+    "video_to_image",
+    "video_uncrop",
+    "video_voiceover",
+    "wa_mm_image_filtering"
+  ]
+}
